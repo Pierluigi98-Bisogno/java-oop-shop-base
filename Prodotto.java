@@ -152,6 +152,21 @@ public class Prodotto {
         return prezzo + importoIva;
     }
     
+    /**
+     * Restituisce il nome esteso del prodotto.
+     * Il nome esteso è formato dalla concatenazione del codice e del nome del prodotto,
+     * separati da un trattino (formato: "codice-nome").
+     * 
+     * Esempio: se codice = 12345 e nome = "Smartphone", 
+     * il nome esteso sarà "12345-Smartphone"
+     * 
+     * @return il nome esteso del prodotto nel formato "codice-nome"
+     */
+    public String getNomeEsteso() {
+        // Concatena il codice, un trattino e il nome del prodotto
+        return codice + "-" + nome;
+    }
+    
     // METODI SETTER
     // I metodi setter servono per "modificare" il valore degli attributi privati
     // Permettono di cambiare i valori degli attributi dopo che l'oggetto è stato creato
