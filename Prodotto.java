@@ -24,7 +24,7 @@ public class Prodotto {
       * Generatore di numeri casuali per creare il codice del prodotto
       * È statico perché condiviso da tutti gli oggetti della classe
       */
-     private static Random random = new Random();
+     private static final Random random = new Random();
     
     /**
      * Nome del prodotto (stringa di testo)
