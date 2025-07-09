@@ -134,6 +134,24 @@ public class Prodotto {
         return prezzo; // Il prezzo base corrisponde al prezzo memorizzato (senza IVA)
     }
     
+    /**
+     * Restituisce il prezzo del prodotto comprensivo di IVA.
+     * Questo metodo calcola automaticamente il prezzo finale che il cliente dovrà pagare,
+     * aggiungendo l'IVA al prezzo base.
+     * 
+     * Formula: prezzo base + (prezzo base * percentuale IVA / 100)
+     * Esempio: se prezzo base = 100€ e IVA = 22%, il prezzo finale sarà 122€
+     * 
+     * @return il prezzo del prodotto con IVA inclusa in euro
+     */
+    public double getPrezzoConIva() {
+        // Calcola l'importo dell'IVA: prezzo base * percentuale IVA / 100
+        double importoIva = prezzo * iva / 100;
+        
+        // Restituisce il prezzo base + l'importo dell'IVA
+        return prezzo + importoIva;
+    }
+    
     // METODI SETTER
     // I metodi setter servono per "modificare" il valore degli attributi privati
     // Permettono di cambiare i valori degli attributi dopo che l'oggetto è stato creato
