@@ -120,6 +120,20 @@ public class Prodotto {
         return iva; // Restituisce il valore dell'attributo iva
     }
     
+    // METODI DI UTILITÀ
+    // Questi metodi forniscono funzionalità aggiuntive per calcolare prezzi e informazioni
+    
+    /**
+     * Restituisce il prezzo base del prodotto (senza IVA).
+     * Questo metodo è utile quando si vuole ottenere il prezzo originale del prodotto
+     * prima dell'applicazione dell'IVA.
+     * 
+     * @return il prezzo base del prodotto in euro (senza IVA)
+     */
+    public double getPrezzoBase() {
+        return prezzo; // Il prezzo base corrisponde al prezzo memorizzato (senza IVA)
+    }
+    
     // METODI SETTER
     // I metodi setter servono per "modificare" il valore degli attributi privati
     // Permettono di cambiare i valori degli attributi dopo che l'oggetto è stato creato
