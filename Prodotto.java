@@ -58,23 +58,23 @@ public class Prodotto {
       * Costruttore della classe Prodotto.
       * Crea un nuovo prodotto con i parametri specificati.
       * Il codice viene generato automaticamente in modo casuale.
-      * 
+     * 
       * @param nome il nome del prodotto
       * @param descrizione la descrizione del prodotto
       * @param prezzo il prezzo del prodotto in euro
       * @param iva la percentuale di IVA (esempio: 22.0 per 22%)
-      */
-     public Prodotto(String nome, String descrizione, double prezzo, double iva) {
+     */
+    public Prodotto(String nome, String descrizione, double prezzo, double iva) {
          // Generiamo automaticamente un codice casuale tra 0 e 99999
-         this.codice = random.nextInt(100000);
-         
+        this.codice = random.nextInt(100000);
+        
          // La parola chiave "this" si riferisce all'oggetto corrente
          // Assegniamo i valori passati come parametri agli attributi dell'oggetto
          this.nome = nome;
          this.descrizione = descrizione;
          this.prezzo = prezzo;
          this.iva = iva;
-     }
+    }
     
     // METODI GETTER
     // I metodi getter servono per "leggere" il valore degli attributi privati
